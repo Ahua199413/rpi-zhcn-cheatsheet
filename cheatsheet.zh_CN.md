@@ -239,7 +239,6 @@ Rev2另加P6接口，用镊子短路可让树莓派硬重启。
 
 ### 命令行
 
-* bash
 * C/C++: gcc/g++
 * Python: python(Py2.7) python3(Py3K)
 * Oracle Java: javac(编译器) java(虚拟机)
