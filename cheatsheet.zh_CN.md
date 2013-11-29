@@ -60,8 +60,8 @@
 #### 软件包管理
 
 * 安装 `sudo apt-get install <name>`
-* 卸载 `sudo apt-get remove <name>`（只删程序）
-* 卸载 `sudo apt-get purge <name>`（也删配置文件）
+* 删除 `sudo apt-get remove <name>`（只删程序）
+* 卸载 `sudo apt-get purge <name>`（删程序和配置文件）
 * 搜索 `apt-cache search <keyword>`
 
 底层硬件
