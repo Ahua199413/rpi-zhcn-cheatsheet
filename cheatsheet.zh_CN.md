@@ -104,6 +104,35 @@ SD卡容量恢复：`sudo gparted`，删除所有分区，全部空间建立一�
   (调试树莓派自带串口必备)
 * Arduino开源硬件 IDE：`arduino`
 
+常用命令
+------------------------------
+
+* (命令行)启动图形桌面 `startx`
+
+### 硬件相关
+
+* USB设备列表 `lsusb`
+* 块设备列表 `lsblk`
+* 查看挂载 `mount`
+* 网络信息 `ifconfig`
+* 无线信息 `iwconfig`
+
+### Wi-Fi配置
+
+图形界面Wi-Fi配置 `wpa_gui`（桌面WiFi Config）
+
+命令行Wi-Fi配置 `sudo wpa_cli`
+
+```
+> add_network
+4 <-- 记住这个号码！
+> set_network 4 ssid "Your SSID"
+> set_network 4 key_mgmt WPA-PSK
+> set_network 4 psk "Password"
+> enable_network 4
+> save_config
+```
+
 底层硬件
 ------------------------------
 
