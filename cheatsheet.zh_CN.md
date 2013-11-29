@@ -4,6 +4,25 @@
 系统安装
 ------------------------------
 
+### 系统烧写
+
+#### Windows
+
+USB Image Tool (可免解压识别.zip/.gz包)  
+XP需要.net 2.0
+
+SD卡容量恢复：SD Formatter
+
+#### Linux
+
+确认设备文件：`lsblk`
+
+* `.img`烧写：`sudo dd bs=4M if=image.img of=/dev/sdx` **危险命令，注意不要选错目标设备！！**
+* `.zip`免解压直接写盘：`unzip -p image.zip *.img | sudo dd bs=4M of=/dev/sdx`
+* `.gz`免解压直接写盘：`gunzip -c image.img.gz | sudo dd bs=4M of=/dev/sdx`
+
+SD卡容量恢复：`sudo gparted`，删除所有分区，全部空间建立一个FAT32主分区。
+
 ### sudo raspi-config
 
 * 1 Expand Filesystem 分区扩展
