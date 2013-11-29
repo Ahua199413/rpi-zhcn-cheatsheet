@@ -64,6 +64,13 @@
 * 卸载 `sudo apt-get purge <name>`（删程序和配置文件）
 * 搜索 `apt-cache search <keyword>`
 
+#### 实用软件包
+
+* SCIM中文输入法：scim-pinyin
+* Google Chromium浏览器：chromium chromium-l10n
+* Geany 轻量级多语言IDE：geany
+
+
 底层硬件
 ------------------------------
 
