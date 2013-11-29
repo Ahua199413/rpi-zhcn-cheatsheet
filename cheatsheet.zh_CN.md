@@ -9,27 +9,27 @@
 * 1 Expand Filesystem 分区扩展
 * 2 Change User Password 更改pi口令(推荐更改)
 * 3 Enable Boot to Desktop 启动选项
- * * Console 文字终端(默认)
- * * Desktop 图形环境+LXDE桌面
- * * Scratch 小猫编程(图形环境无桌面)
+    * Console 文字终端(默认)
+    * Desktop 图形环境+LXDE桌面
+    * Scratch 小猫编程(图形环境无桌面)
 * 4 I18n options 国际化选项  
   如果界面不能显示中文，则执行`LANG=C`临时改系统语言为英语，再重进`raspi-config`。
- * * I1 Locale 语言支持
-  * * * 操作键: `PgUp`, `PgDn`, `Space`, `Tab`, `Enter`, `方向`
-  * * * 必要：`en_US.UTF-8`
-  * * * 必要：`zh_CN.UTF-8`
-  * * * 可选：`zh_CN.GB18030`
- * * I2 Timezone 时区 `Asia/Shanghai`
- * * I3 Keyboard 键盘布局
-  * * * 硬件类型：Generic 104-key PC
-  * * * 键盘布局：Other
-  * * * 国家地区：Chinese
-  * * * 键盘布局：Chinese
-  * * * 变换键：No AltGr Key
-  * * * 多功能键：No compose key
-  * * * Ctrl+Alt+Bksp：Yes
+    * I1 Locale 语言支持
+        * 操作键: `PgUp`, `PgDn`, `Space`, `Tab`, `Enter`, `方向`
+        * 必要：`en_US.UTF-8`
+        * 必要：`zh_CN.UTF-8`
+        * 可选：`zh_CN.GB18030`
+    * I2 Timezone 时区 `Asia/Shanghai`
+    * I3 Keyboard 键盘布局
+        1. 硬件类型：Generic 104-key PC
+        1. 键盘布局：Other
+        1. 国家地区：Chinese
+        1. 键盘布局：Chinese
+        1. 变换键：No AltGr Key
+        1. 多功能键：No compose key
+        1. Ctrl+Alt+Bksp：Yes
 * 8 Advanced Options 高级选项
- * * A2 Hostname 主机名(可选更改)
+    * A2 Hostname 主机名(可选更改)
 
 ### APT 软件管理器
 
