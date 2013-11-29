@@ -92,6 +92,7 @@ Rev2另加P6接口，用镊子短路可让树莓派硬重启。
 
 * 更新本地副本 `git pull`
 * 提交本地修改 `git commit`
+* 快速提交(承认所有文件更改) `git commit -a`
 * 推送远程仓库 `git push`
 
 分支操作
@@ -103,6 +104,7 @@ Rev2另加P6接口，用镊子短路可让树莓派硬重启。
 * 并入分支 `git merge <branch>`  
 * 标注标签 `git tag <v1.0>`
 * 推送分支到远程 `git push origin <branch>`
+* 删除远程分支 `git push origin :<branch>`
 
 修正错误
 
