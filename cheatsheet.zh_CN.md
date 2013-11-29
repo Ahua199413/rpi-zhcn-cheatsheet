@@ -37,12 +37,12 @@
 
 镜像站列表：
 
-* 树莓爱好者整理汇总（推荐）  
-  <http://t.cn/8k4MkIx>  
-  <http://www.shumeipai.org/system-mirrors>
-* Raspbian 官方网站  
-  <http://t.cn/zj8aFYM>  
-  <http://www.raspbian.org/RaspbianMirrors>  
+* 辽宁大连 大连东软信息学院（We·Cloud 云技术小组） <http://mirrors.neusoft.edu.cn/raspbian/raspbian/>
+* 湖北武汉 华中科技大学（联创团队） <http://mirrors.hustunique.com/raspbian/raspbian/>
+* 安徽合肥 中国科学技术大学（中科大Linux用户协会） <http://mirrors.ustc.edu.cn/raspbian/raspbian/>
+* 广东广州 中山大学（校内开源爱好者） <http://mirror.sysu.edu.cn/raspbian/raspbian/>
+* 四川成都 电子科技大学（凝聚网络安全工作室） <http://raspbian.cnssuestc.org/raspbian/>
+* 山东济南 搜狐公司 （Sohu Tech-NO） <http://mirror.sohu.com/raspbian/raspbian/>
 
 更换软件源 `sudo nano /etc/apt/sources.list`  
 
