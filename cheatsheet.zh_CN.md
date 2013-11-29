@@ -102,6 +102,7 @@ Rev2另加P6接口，用镊子短路可让树莓派硬重启。
 * 切换分支 `git checkout <branch>`
 * 并入分支 `git merge <branch>`  
 * 标注标签 `git tag <v1.0>`
+* 推送分支到远程 `git push origin <branch>`
 
 修正错误
 
