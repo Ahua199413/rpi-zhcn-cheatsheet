@@ -183,6 +183,24 @@ raspi-config建议超频档位
 
 Rev2另加P6接口，用镊子短路可让树莓派硬重启。
 
+自带编程环境
+------------------------------
+
+### 命令行
+
+* bash
+* C/C++: gcc/g++
+* Python: python(Py2.7) python3(Py3K)
+* Oracle Java: javac(编译器) java(虚拟机)
+
+### 图形界面
+
+* Python IDE: idle(Py2.7) idle3(Py3K)
+* Mathematica: mathematica  
+  (APT软件包：`wolfram-engine`)
+* 小猫: scratch
+* 音乐: sonic-pi
+
 版本管理系统
 ------------------------------
 
