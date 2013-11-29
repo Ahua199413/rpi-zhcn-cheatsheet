@@ -268,6 +268,31 @@ Rev2另加P6接口，用镊子短路可让树莓派硬重启。
 * 读取：`gpio read <pin>`
 * 等待边沿：`gpio wfi <pin> rising/falling/both`
 
+### UART串口
+
+* 设备文件：`/dev/ttyAMA0`
+* 默认串口参数：115200 8N1 无流控
+
+如果另有USB转串口设备，则在`/dev/ttyUSB*`。
+
+#### 解除Linux终端占用
+
+* `/boot/cmdline.txt` 删除 `console=ttyAMA0,115200 kgdboc=ttyAMA0,115200`
+* `/etc/inittab` 删除 `T0:23:respawn:/sbin/getty -L ttyAMA0 115200 vt100`
+
+#### minicom
+
+授权用户访问串口设备 `sudo usermod -a -G dialout pi` (重登录生效)
+
+minicom设置：`sudo minicom --setup` 需要修改：
+
+* Serial port setup 串口配置
+    * A Device = `/dev/ttyAMA0`
+    * E Bps/Par/Bits = 115200 8N1
+    * F HW Flow Ctrl = No
+    * G SW Flow Ctrl = No
+* Save setup as dfl 保存默认配置
+
 自带编程环境
 ------------------------------
 
