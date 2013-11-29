@@ -31,6 +31,38 @@
 * 8 Advanced Options 高级选项
  * * A2 Hostname 主机名(可选更改)
 
+### APT 软件管理器
+
+#### 软件源镜像站
+
+镜像站列表：
+
+* 树莓爱好者整理汇总（推荐）  
+  <http://t.cn/8k4MkIx>  
+  <http://www.shumeipai.org/system-mirrors>
+* Raspbian 官方网站  
+  <http://t.cn/zj8aFYM>  
+  <http://www.raspbian.org/RaspbianMirrors>  
+
+更换软件源 `sudo nano /etc/apt/sources.list`  
+
+`sources.list`内容：
+
+    deb <url> wheezy main contrib non-free rpi
+    deb-src <url> wheezy main contrib non-free rpi
+
+#### 系统升级
+
+* 更新软件列表 `sudo apt-get update`  
+  （安装新软件如有任何错误，就先update）
+* 升级所有软件 `sudo apt-get upgrade`
+
+#### 软件包管理
+
+* 安装 `sudo apt-get install <name>`
+* 卸载 `sudo apt-get remove <name>`（只删程序）
+* 卸载 `sudo apt-get purge <name>`（也删配置文件）
+* 搜索 `apt-cache search <keyword>`
 
 底层硬件
 ------------------------------
