@@ -23,6 +23,11 @@ SD卡容量恢复：SD Formatter
 
 SD卡容量恢复：`sudo gparted`，删除所有分区，全部空间建立一个FAT32主分区。
 
+#### 首次开机固定IP
+
+cmdline.txt加入： `ip=192.168.0.50::192.168.0.1:255.255.255.0`  
+(格式——客户端IP:服务器IP:网关IP:子网掩码)
+
 ### sudo raspi-config
 
 * 1 Expand Filesystem 分区扩展
