@@ -334,6 +334,24 @@ Rev2另加P6接口，用镊子短路可让树莓派硬重启。
 * 读取：`gpio read <pin>`
 * 等待边沿：`gpio wfi <pin> rising/falling/both`
 
+### SPI
+
+启用SPI内核模块: `sudo raspi-config` -> 8 Advanced... -> A5 SPI
+
+设备文件：`/dev/spidev0.0`和`0.1`（1总线，2片选）
+
+### I2C
+
+启用I2C内核模块:
+
+* `/etc/modules`加两行：`i2c-bcm2708`和`i2c-dev`
+* `/etc/modprobe.d/raspi-blacklist.conf`删`blacklist i2c-bcm2708`
+
+设备文件：`/dev/i2c-0`和`i2c-1`（2总线）。  
+新版(Rev2)用i2c-1，旧版(Rev1)用i2c-0。（Rev2必须焊接才能强行连接i2c-0）
+
+I2C总线扫描：`sudo i2cdetect -y 1` (或0) (需要`i2c-tools`软件包)
+
 ### UART串口
 
 * 设备文件：`/dev/ttyAMA0`
