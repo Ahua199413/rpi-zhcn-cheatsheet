@@ -112,10 +112,76 @@ cmdline.txt加入： `ip=192.168.0.50::192.168.0.1:255.255.255.0`
 常用命令
 ------------------------------
 
-* (命令行)启动图形桌面 `startx`
+### Linux基础
+
+* 命令行操作
+    * Ctrl+C 终止进程（不要乱按）
+    * Ctrl+D 终止文件输入、注销
+    * Ctrl+W 删除最后一个单词
+    * Tab 文件名/命令名/参数自动补全
+    * `<` `>` `2>` 标准输入/输出/错误重定向
+    * `|` 管道操作
+    * ``` `<command>` ``` 以输出结果当作命令执行(eval)
+    * 一般的命令行顺序：命令 参数 操作文件列表
+    * 变量定义 `VARNAME='value'` 等号两边不得加空格！
+    * 变量使用 `${VARNAME}`
+* 基本文件操作
+    * pwd
+    * ls (-a -l)
+    * cat
+    * cp/mv
+    * rm (-rf)
+    * mkdir/rmdir
+    * chmod (+x -x)
+    * file
+* 文本与管道命令
+    * echo
+    * less
+    * head/tail
+    * xargs
+    * grep/egrep
+    * sort
+* 常用设备文件
+    * /dev/zero 无限输出0x00
+    * /dev/null 数据黑洞(读为空文件，写一律丢弃)
+    * /dev/stdin(out,err) 标准输入/输出/错误
+* 运行可执行文件 `./<filename>`
+* 提升权限 `sudo <command>`
+* 进入root命令行 `sudo -i`
+
+### 软件相关
+
+* 文本编辑器 `nano` (vi/emacs随意，只要会用)
+* 压缩包管理
+    * .tar(.gz/.bz)解包 `tar xf <tarfile>`
+    * .tar.gz打包 `tar zcf <tarfile> <file-dir-to-add>`
+    * .zip解包 `unzip <zipfile>`
+    * .zip打包 `zip <zipfile> <file-dir-to-add>`
+    * Linux下推荐.tar.gz包（可记录文件权限）
+    * 习惯将所有文件整理进子文件夹再打压缩包
+    * 习惯解压到原位，不新建文件夹
+* 进程列表 `ps aux`
+* 系统监视器 `top` `htop`(须安装)
+* 终止进程
+    * 凭进程ID `kill <procid>`
+    * 凭进程名称 `pkill <procname>`
+    * 凭进程完整命令行 `pkill -f <fullcmdline>`
+    * 均可加参数 `-9` 强杀进程
+* 启动图形桌面 `startx`
+
+### 开发相关
+
+* 文本处理器 `awk` `sed`
+* 16进制查看器 `od -t x1 <filename>`
+* 格式化输出，任意原始字节输出 `printf`  
+  (用法与C的printf极其类似)
+* ASCII码表 `man ascii`
 
 ### 硬件相关
 
+* 剩余内存 `free -h`
+* 剩余存储 `df -h`
+* 在线时间与负载 `uptime`
 * USB设备列表 `lsusb`
 * 块设备列表 `lsblk`
 * 查看挂载 `mount`
