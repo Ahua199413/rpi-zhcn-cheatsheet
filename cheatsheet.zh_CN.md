@@ -67,10 +67,23 @@
 
 #### 实用软件包
 
-* SCIM中文输入法：scim-pinyin
-* Google Chromium浏览器：chromium chromium-l10n
-* Geany 轻量级多语言IDE：geany
-
+* SCIM中文输入法：`scim-pinyin`
+* fcitx小企鹅输入法：`fcitx-sunpinyin`
+* 文鼎字体：`fonts-arphic-uming` `fonts-arphic-ukai`
+* 文泉驿字体：`ttf-wqy-zenhei` `ttf-wqy-microhei` `xfonts-wqy`
+* Google Chromium浏览器：`chromium` `chromium-l10n`
+* FileZilla FTP客户端：`filezilla`
+* Geany 轻量级多语言IDE：`geany`
+* AbiWord 轻量级文字处理：`abiword`
+* mPaint “画图”：`mtpaint`
+* GIMP “Photoshop”：`gimp`
+* Aria2 下载机管理器：`aria2`
+* Transmission BT客户端：`transmission`
+* tmux 远程登录终端管理器：`tmux`  
+  (掉线后程序不终止，随时恢复现场，SSH必备)
+* minicom 串口超级终端：`minicom`  
+  (调试树莓派自带串口必备)
+* Arduino开源硬件 IDE：`arduino`
 
 底层硬件
 ------------------------------
