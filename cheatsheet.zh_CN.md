@@ -19,6 +19,7 @@
         * 必要：`en_US.UTF-8`
         * 必要：`zh_CN.UTF-8`
         * 可选：`zh_CN.GB18030`
+        * 下一步默认预言必须选：`zh_CN.UTF-8`
     * I2 Timezone 时区 `Asia/Shanghai`
     * I3 Keyboard 键盘布局
         1. 硬件类型：Generic 104-key PC
