@@ -67,6 +67,60 @@
 底层硬件
 ------------------------------
 
+### config.txt
+
+#### HDMI高清音视频
+
+* 强制HDMI hdmi_force_hotplug=1
+* 忽略HDMI hdmi_ignore_hotplug=1
+* HDMI信号增强 config_hdmi_boost=0~7
+* 禁止过扫描 disable_overscan=1
+* 不读取显示器参数 hdmi_ignore_edid=0xa5000080
+* CEA电视机模式 hdmi_group=1
+* DMT显示器模式 hdmi_group=2
+* DMT模式下HDMI输出声音 hdmi_drive=2
+
+CEA电视机模式(hdmi_group=1)分辨率(60Hz)：
+
+* hdmi_mode=2 480p
+* hdmi_mode=4 720p
+* hdmi_mode=16 1080p
+
+DMT显示器模式(hdmi_group=2)分辨率(60Hz)：
+
+* hdmi_mode=4 640x480
+* hdmi_mode=9 800x600
+* hdmi_mode=16 1024x768  
+  16如有问题用17(70Hz)
+* hdmi_mode=23 1280x768
+* hdmi_mode=81 1366x768
+* hdmi_mode=32 1280x960
+* hdmi_mode=35 1280x1024
+* hdmi_mode=73 1920x1440
+
+#### RCA模拟复合视频
+
+* 视频制式 sdtv_mode=0(NTSC)/3(PAL)
+* 视频长宽比 sdtv_aspect=1(4:3)/3(16:9)
+* 黑白模式 sdtv_disable_colourburst=1
+
+#### 超频
+
+超频选项（只调节这几项质保不失效）
+
+* arm_freq ARM核心频率
+* core_freq GPU核心频率
+* sdram_freq SDRAM内存频率
+* over_voltage 增加核心电压
+
+raspi-config建议超频档位
+
+* None： 700 250 400 0
+* Modest: 800 250 400 0
+* Medium: 900 250 450 2
+* High: 950 250 450 6
+* Turbo: 1000 500 600 6
+
 ### GPIO
 
 **所有IO口均为3.3V电平！输入5V直接烧IO口！！！**
