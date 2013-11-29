@@ -80,7 +80,7 @@
 * P1-06 GND
 * P1-08 GPIO14 [w:15] TXD
 * P1-10 GPIO15 [w:16] RXD
-* P1-12 GPIO18 [w:1]
+* P1-12 GPIO18 [w:1] PWM(与模拟音频复用)
 * P1-14 GND
 * P1-16 GPIO23 [w:4]
 * P1-18 GPIO24 [w:5]
@@ -94,7 +94,7 @@
 * P1-01 3V3 方块焊点
 * P1-03 GPIO2 [w:8] I2C1:SDA 1K8上拉
 * P1-05 GPIO3 [w:9] I2C1:SCL 1K8上拉
-* P1-07 GPIO4 [w:7]
+* P1-07 GPIO4 [w:7] 1-Wire
 * P1-09 GND
 * P1-11 GPIO17 [w:0]
 * P1-13 GPIO27 [w:2]
