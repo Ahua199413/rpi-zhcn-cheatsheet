@@ -103,11 +103,16 @@ cmdline.txt加入： `ip=192.168.0.50::192.168.0.1:255.255.255.0`
 * GIMP “Photoshop”：`gimp`
 * Aria2 下载机管理器：`aria2`
 * Transmission BT客户端：`transmission`
-* tmux 远程登录终端管理器：`tmux`  
+* Arduino开源硬件 IDE：`arduino`
+
+#### 实用命令行工具
+
+* tmux 远程登录终端复用：`tmux`  
   (掉线后程序不终止，随时恢复现场，SSH必备)
 * minicom 串口超级终端：`minicom`  
   (调试树莓派自带串口必备)
-* Arduino开源硬件 IDE：`arduino`
+* lftp FTP客户端：`lftp`
+* ImageMagick 命令行图像处理：`imagemagick`
 
 常用命令
 ------------------------------
