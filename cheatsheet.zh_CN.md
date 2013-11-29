@@ -111,6 +111,7 @@ cmdline.txt加入： `ip=192.168.0.50::192.168.0.1:255.255.255.0`
   (掉线后程序不终止，随时恢复现场，SSH必备)
 * minicom 串口超级终端：`minicom`  
   (调试树莓派自带串口必备)
+* htop 任务管理器top加强版：`htop`
 * lftp FTP客户端：`lftp`
 * ImageMagick 命令行图像处理：`imagemagick`
 
@@ -153,6 +154,8 @@ cmdline.txt加入： `ip=192.168.0.50::192.168.0.1:255.255.255.0`
 * 运行可执行文件 `./<filename>`
 * 提升权限 `sudo <command>`
 * 进入root命令行 `sudo -i`
+* 注销 `logout`
+* 关机重启 `sudo halt` `sudo reboot`
 
 ### 软件相关
 
