@@ -223,6 +223,17 @@ raspi-config建议超频档位
 
 Rev2另加P6接口，用镊子短路可让树莓派硬重启。
 
+#### GPIO命令行工具：gpio
+
+`gpio`工具由wiringPi提供。无需`sudo`。默认使用wiringPi针脚编号。
+
+* 查看所有GPIO：`gpio readall`
+* 设置模式：`gpio mode <pin> in/out/pwm`
+* 设置上下拉：`gpio mode <pin> up/down/tri`
+* 写入：`gpio write <pin> 0/1`
+* 读取：`gpio read <pin>`
+* 等待边沿：`gpio wfi <pin> rising/falling/both`
+
 自带编程环境
 ------------------------------
 
